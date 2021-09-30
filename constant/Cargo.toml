@@ -6,6 +6,8 @@ license = "Apache-2.0"
 description = "Constant evaluation tools for Rust"
 include = ["../const_internals/src/**/*.rs", "src/**/*.rs"]
 authors = ["Sayan Nandan <nandansayan@outlook.com>"]
+documentation = "https://docs.rs/constant"
+repository = "https://github.com/ohsayan/constant"
 
 [dependencies]
 const_internals = { path = "../const_internals" }
