@@ -22,7 +22,7 @@ pub(super) fn recursive_process_tuple(tuple: &TypeTuple) -> Option<quote::__priv
                 let ret = self::process_array(arr)?;
                 inner_decl = quote! {
                     #inner_decl
-                    #ret,
+                    [#ret],
                 };
             }
             _ => return None,
@@ -38,7 +38,7 @@ pub(super) fn process_array(array: &TypeArray) -> Option<quote::__private::Token
         Type::Path(_) => {
             inner_decl = quote! {
                 #inner_decl
-                ::constant::Constdef::DEFAULT,
+                ::constant::Constdef::DEFAULT; #len
             };
         }
         Type::Array(arr) => {
@@ -52,7 +52,7 @@ pub(super) fn process_array(array: &TypeArray) -> Option<quote::__private::Token
             let ret = self::recursive_process_tuple(tuple)?;
             inner_decl = quote! {
                 #inner_decl
-                #ret; #len
+                (#ret); #len
             };
         }
         _ => return None,

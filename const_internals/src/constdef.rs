@@ -55,6 +55,9 @@ pub(crate) fn derive(input: TokenStream) -> TokenStream {
                 Self::default()
             }
         }
+        impl #impl_gen ::constant::Constdef for #struct_name #ty_gen #where_clause {
+            const DEFAULT: Self = Self::default();
+        }
     };
     tokens.into()
 }
