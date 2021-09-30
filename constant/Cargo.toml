@@ -1,0 +1,11 @@
+[package]
+name = "constant"
+version = "0.1.0"
+edition = "2018"
+license = "Apache-2.0"
+description = "Constant evaluation tools for Rust"
+include = ["../const_internals/src/**/*.rs"]
+authors = ["Sayan Nandan <nandansayan@outlook.com>"]
+
+[dependencies]
+const_internals = { path = "../const_internals" }
