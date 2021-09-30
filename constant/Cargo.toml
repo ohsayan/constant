@@ -8,6 +8,7 @@ include = ["../const_internals/src/**/*.rs", "src/**/*.rs"]
 authors = ["Sayan Nandan <nandansayan@outlook.com>"]
 documentation = "https://docs.rs/constant"
 repository = "https://github.com/ohsayan/constant"
+readme = "../README.md"
 
 [dependencies]
-const_internals = { path = "../const_internals" }
+const_internals = { version = "0.1.0" }
