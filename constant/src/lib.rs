@@ -21,7 +21,7 @@ pub use const_internals::*;
 /// struct MyWeirdBool(bool);
 ///
 /// impl Constdef for MyWeirdBool {
-///     const DEF: MyWeirdBool = MyWeirdBool(false);
+///     const DEFAULT: MyWeirdBool = MyWeirdBool(false);
 /// }
 ///
 /// ```
