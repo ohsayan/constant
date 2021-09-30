@@ -8,4 +8,4 @@ include = ["../const_internals/src/**/*.rs"]
 authors = ["Sayan Nandan <nandansayan@outlook.com>"]
 
 [dependencies]
-const_internals = { path = "../const_internals" }
+const_internals = { path = "../const_internals", version = "0.0.1" }
