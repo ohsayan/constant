@@ -1,6 +1,6 @@
 [package]
 name = "const_internals"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2018"
 license = "Apache-2.0"
 description = "Internal macros for the constant crate. Not for external use!"

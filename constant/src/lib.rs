@@ -1,6 +1,7 @@
 //! # `constant`: Constant, compile-time evaluation tools for Rust 🦀
 //!
 //! ![Rust Stable](https://img.shields.io/badge/rust-stable-50C878?style=for-the-badge) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ohsayan/constant/Test?style=for-the-badge) [![Crates.io](https://img.shields.io/crates/v/constant?style=for-the-badge)](https://crates.io/crates/constant) [![docs.rs](https://img.shields.io/docsrs/constant?style=for-the-badge)](https://docs.rs/constant) [![GitHub](https://img.shields.io/github/license/ohsayan/constant?style=for-the-badge)](./LICENSE)
+//!
 //! The `constant` crate aims to provide tools for safely _working around_ the limits imposed by constant evaluation in Rust.
 //!
 //! ## Features
