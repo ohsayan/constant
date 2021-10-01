@@ -17,4 +17,4 @@ default = ["const_internals"]
 const_internals = {path = "../const_internals", version = "0.2.0", optional = true}
 
 [dev-dependencies]
-const_internals = {path = "../const_internals"}
+const_internals = {path = "../const_internals", version = "0.2.0"}
